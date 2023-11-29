@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.7.34302.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xll_duckdb", "xll_duckdb.vcxproj", "{47AABED2-9317-4491-B4F7-6316335B189C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{367249BB-B8A3-4671-B095-A5DB904DBD6D} = {367249BB-B8A3-4671-B095-A5DB904DBD6D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xll", "xll\xll.vcxproj", "{367249BB-B8A3-4671-B095-A5DB904DBD6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,14 @@ Global
 		{47AABED2-9317-4491-B4F7-6316335B189C}.Release|x64.Build.0 = Release|x64
 		{47AABED2-9317-4491-B4F7-6316335B189C}.Release|x86.ActiveCfg = Release|Win32
 		{47AABED2-9317-4491-B4F7-6316335B189C}.Release|x86.Build.0 = Release|Win32
+		{367249BB-B8A3-4671-B095-A5DB904DBD6D}.Debug|x64.ActiveCfg = Debug|x64
+		{367249BB-B8A3-4671-B095-A5DB904DBD6D}.Debug|x64.Build.0 = Debug|x64
+		{367249BB-B8A3-4671-B095-A5DB904DBD6D}.Debug|x86.ActiveCfg = Debug|Win32
+		{367249BB-B8A3-4671-B095-A5DB904DBD6D}.Debug|x86.Build.0 = Debug|Win32
+		{367249BB-B8A3-4671-B095-A5DB904DBD6D}.Release|x64.ActiveCfg = Release|x64
+		{367249BB-B8A3-4671-B095-A5DB904DBD6D}.Release|x64.Build.0 = Release|x64
+		{367249BB-B8A3-4671-B095-A5DB904DBD6D}.Release|x86.ActiveCfg = Release|Win32
+		{367249BB-B8A3-4671-B095-A5DB904DBD6D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
