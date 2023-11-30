@@ -149,6 +149,14 @@
   <ItemGroup>
     <ClInclude Include="fms_duckdb.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="xll_duckdb.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="xll\xll.vcxproj">
+      <Project>{367249bb-b8a3-4671-b095-a5db904dbd6d}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
