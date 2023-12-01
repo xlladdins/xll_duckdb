@@ -207,19 +207,19 @@ namespace fms::duckdb {
 			return &res;
 		}
 
-		duckdb_type column_type(idx_t col) const
+		duckdb_type column_type(idx_t col)
 		{
 			return duckdb_column_type(&res, col);
 		}
-		const char* column_name(idx_t col) const
+		const char* column_name(idx_t col)
 		{
 			return duckdb_column_name(&res, col);
 		}
-		idx_t column_count() const
+		idx_t column_count()
 		{
 			return duckdb_column_count(&res);
 		}
-		idx_t row_count() const
+		idx_t row_count()
 		{
 			return duckdb_row_count(&res);
 		}
@@ -242,12 +242,14 @@ namespace fms::duckdb {
 	X(double, double) \
 	X(char*, varchar) \
 	X(duckdb_blob, blob) \
-	X(string, string) \
+	X(string, string_internal) \
 	X(date, date) \
 
+		//X(time, time) \
+
+		//X(timestamp, timestamp) \
+
 #if 0
-		X(string, time) \
-			X(string, timestamp) \
 			X(string, interval) \
 			X(string, hugeint) \
 			X(string, pointer) \
