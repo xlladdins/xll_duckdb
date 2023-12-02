@@ -1,6 +1,5 @@
 // fms_duckdb.h - DuckDB database
 // https://duckdb.org/docs/archive/0.9.2/api/c/overview
-#define DUCKDB_VERSION "0.9.2"
 #pragma once
 #include <stdexcept>
 #include "duckdb-0.9.2/duckdb.h"
