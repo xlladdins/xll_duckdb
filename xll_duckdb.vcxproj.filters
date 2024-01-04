@@ -18,6 +18,9 @@
     <ClInclude Include="fms_duckdb.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="xll_duckdb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="xll_duckdb.cpp">

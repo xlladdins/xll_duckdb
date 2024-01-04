@@ -224,7 +224,6 @@ namespace fms::duckdb {
 		}
 
 		// https://duckdb.org/docs/archive/0.9.2/api/c/api#value-functions
-#define DUCKDB_VALUE_IMPL(a,b) a value_##b(idx_t row, idx_t col) { return duckdb_value_##b(&res, row, col); }
 #define DUCKDB_VALUE(X) \
 	X(bool, boolean) \
 	X(int8_t, int8) \
@@ -282,7 +281,7 @@ namespace fms::duckdb {
 			X(string, invalid) \
 
 #endif // 0
-
+#define DUCKDB_VALUE_IMPL(a,b) a value_##b(idx_t row, idx_t col) { return duckdb_value_##b(&res, row, col); }
 			DUCKDB_VALUE(DUCKDB_VALUE_IMPL)
 #undef DUCKDB_VALUE_IMPL
 #undef DUCKDB_VALUE
