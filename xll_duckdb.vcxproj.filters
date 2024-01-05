@@ -27,4 +27,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Library Include="duckdb-0.9.2\duckdb.lib" />
+  </ItemGroup>
 </Project>
